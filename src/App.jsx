@@ -40,7 +40,8 @@ export default function App() {
         transition={{ duration: 0.8 }}
         className="w-full lg:w-1/2 flex flex-col items-center justify-center text-center p-6 lg:sticky lg:top-0 lg:h-screen"
       >
-        <img src={TaskImage} alt="Task Management" className="w-100 h-100 object-cover mb-5 rounded-lg shadow-lg" />
+        <img src={`${import.meta.env.BASE_URL}taskimage.png`} alt="Task Management" className="w-100 h-100 object-cover mb-5 rounded-lg shadow-lg" />
+
         <h2 className="text-3xl font-bold">Stay Organized with Task Manager</h2>
         <p className="text-lg mt-2">Manage your personal and work tasks efficiently with our simple and intuitive task manager.</p>
       </motion.div>
